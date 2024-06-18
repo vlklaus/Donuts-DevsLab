@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { DonutModel } from '../../models/donut';
+import { DonutModel, Result } from '../../models/donut';
 
 @Component({
   selector: 'app-donut-item',
@@ -9,5 +9,5 @@ import { DonutModel } from '../../models/donut';
   styleUrl: './donut-item.component.css'
 })
 export class DonutItemComponent {
-  @Input() displayDonut: DonutModel = {} as DonutModel;
+  @Input() displayDonut: Result = {} as Result;
 }

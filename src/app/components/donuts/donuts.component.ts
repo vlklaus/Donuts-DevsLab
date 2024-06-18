@@ -16,14 +16,9 @@ export class DonutsComponent {
 
   donutResult: DonutModel = {} as DonutModel;
 
-  ngOnInit() {
-    this.callApi();
-  }
-
-  callApi(): void {
+  ngOnInit() { //lifecycle hook, first rendering calls to happen and automatic
     this._donutService.getDonut().subscribe((response: DonutModel) => {
       console.log(response);
       this.donutResult = response;
-    });
-  }
+    })};
 }
